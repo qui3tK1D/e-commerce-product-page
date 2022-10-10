@@ -14,7 +14,7 @@
     @apply hover:text-very-very-blue transition-all duration-300;
   }
   button {
-    @apply active:outline-none;
+    @apply active:outline-none active:border-none;
   }
 }
 
@@ -83,6 +83,16 @@
     @apply group-hover:fill-orange-accent  cursor-pointer duration-200;
   }
   .slider__svg {
-    @apply hover:text-primary-orange duration-200 active:text-very-very-blue;
+    @apply hover:text-primary-orange duration-200 text-very-very-blue active:text-very-very-blue;
+  }
+}
+
+.attribution {
+  @apply text-xs text-very-very-blue text-center mb-6;
+}
+
+@layer utilities {
+  .attribution a {
+    @apply text-primary-orange;
   }
 }
